@@ -36,6 +36,7 @@ public class FilterTasksAuth extends OncePerRequestFilter {
                 String password = credentials[1];
                 var user = this.userRepository.findByUserName(userName);
                 if(user != null) {
+                    request.setAttribute("userId", user.getId());
                     //Validação da senha
                     var passwordToChek = BCrypt.verifyer().verify(password.toCharArray(),user.getPassword());
                     if(passwordToChek.verified)
