@@ -14,6 +14,7 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
+
     @PostMapping("/")
     public ResponseEntity create(@RequestBody UserModel userModel) {
         UserModel user = userRepository.findByUserName(userModel.getUserName()); //Procura por um utilizador que já obtenha certo username no banco de dados

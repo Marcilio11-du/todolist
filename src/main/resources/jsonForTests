@@ -1,0 +1,15 @@
+Para o Utilizador
+{
+    "userName":"",
+    "name":"",
+    "password":""
+}
+
+Para as tarefas
+
+{
+    "title":"Tarefa Aleatória",
+    "description":"Tarefa para teste da Funcionalidade de autenticação da API",
+    "startingDate":"",
+    "endingDate":""
+}
